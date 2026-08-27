@@ -1,6 +1,5 @@
 # Personal_Profile_and_Age_Calculator
 
-
 print()
 print()
 
@@ -18,6 +17,9 @@ name = input("What's your name?: ")
 birth_year = input("What year were you born? ")
 birth_year_num = int(birth_year)
 
+#the extra credit 
+future_year = int(input("Enter a future year: "))
+
 print() 
 
 #asking for their favorites 
@@ -34,6 +36,9 @@ favorite_game = input("What's your favorite game?: ")
 #the calculations for how long the user has lived in years 
 age = 2026 - birth_year_num
 
+#the future age of the user 
+future_age = future_year - birth_year_num
+
 #calculations for how long they've lived specifically 
 months_alive = age * 12
 days_alive = age * 365
@@ -42,13 +47,14 @@ minutes_alive = hours_alive * 60
 seconds_alive = minutes_alive * 60 
 
 print() 
+
 #the beginning of the personalized profile (the final product)
 print("This is your profile!")
 
 print()
 print()
 
-print("Hello! " + name)
+print("Hello", name, "!")
 print("You were born in the year " + birth_year)
 print("You live in the city " + city)
 
@@ -59,7 +65,6 @@ print("Your favorite food is " + favorite_food)
 print("Your favorite hobby is " + favorite_hobby)
 print("Your favorite season is " + favorite_season)
 print("Lastly, your favorite game is " + favorite_game)
-
 
 print()
 print()
@@ -72,6 +77,8 @@ print("You've lived ",  hours_alive, " hours!")
 print("You've lived ", minutes_alive, " minutes!") 
 print("You've lived ",  seconds_alive,  " seconds!")
 
+#future age 
+print("In", future_year, "you will be ", future_age)
 
 print() 
 print() 
@@ -79,3 +86,5 @@ print()
 #the closing statements 
 print("Thank you so much for participating!")
 print("Have a good day, and enjoy " + favorite_food + "!")
+
+print()
