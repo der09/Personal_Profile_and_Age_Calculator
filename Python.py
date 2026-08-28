@@ -1,4 +1,7 @@
-# Personal_Profile_and_Age_Calculator
+
+# Name : Diane Hsieh
+# Period: AM
+# Personal Profile & Age Calculator 
 
 print()
 print()
